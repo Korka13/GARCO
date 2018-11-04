@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BLOG on GARCO</title>
+    <link>https://garco.ga/categories/blog/</link>
+    <description>Recent content in BLOG on GARCO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Thu, 30 Aug 2018 21:17:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://garco.ga/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://garco.ga/post/hello-world/</link>
+      <pubDate>Thu, 30 Aug 2018 21:17:00 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/hello-world/</guid>
+      <description>&amp;ldquo;Ciao Mondo!!! Questo è il mio primo post. ma ci vorrà un po&amp;rsquo; per far funzionare tutto. appena modifico qualcosa va tutto a puttane&amp;ldquo;
+Questo post l&amp;rsquo;ho scritto qualche giorno fa, non riuscivo a far visualizzare neanche l&amp;rsquo;immagine. Ci sono ancora delle cose cose che voglio modificare, ma è sufficientemente funzionale per andare online. Quindi, ora davvero. Ciao Mondo!
+I primi post li vorrò dedicare a come questo sito è online, come è costruito, diciamo un tutorial completo per costruire un blog personale completamente gratis.</description>
+    </item>
+    
+  </channel>
+</rss>

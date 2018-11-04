@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="it-it">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https://garco.ga"
+        },
+        "articleSection": "post",
+        "name": "Scaricare il Tema Del Sito Su Hugo",
+        "headline": "Scaricare il Tema Del Sito Su Hugo",
+        "description": "In questa guida viene spiegato come scaricare e installare uno dei tanti temi su Hugo static site generator usando git, offerto il tema di questo sito e spiegati i comandi che Hugo da a disposizione per abilitare il localserver e pubblicare la versione finale del sito web",
+        "inLanguage": "it",
+        "author": "Marco Garantini",
+        "creator": "Marco Garantini",
+        "publisher": "Marco Garantini",
+        "copyrightHolder": "Marco Garantini",
+        "copyrightYear": "2018",
+        "datePublished": "2018-09-20",
+        "dateModified": "2018-09-20",
+        "url": "https://garco.ga/post/scaricare-il-tema-del-sito-su-hugo/",
+        "wordCount": "959",
+        "image": "https://garco.gaimg/barbera.PNG",
+        "keywords": "Blog"
+    }
+    </script>
+
+
+ <title>Scaricare il Tema Del Sito Su Hugo</title>
+
+
+<meta name="description" content="In questa guida viene spiegato come scaricare e installare uno dei tanti temi su Hugo static site generator usando git, offerto il tema di questo sito e spiegati i comandi che Hugo da a disposizione per abilitare il localserver e pubblicare la versione finale del sito web" />
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" href="https://garco.ga/css/font-awesome.min.css" type='text/css' media='all'>
+
+<link href="https://garco.ga/css/style.css" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+
+<link href="https://garco.ga/css/custom.css" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="https://garco.ga/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://garco.ga/img/favicon.ico" type="image/x-icon">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-124901497-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9308475212412596",
+    enable_page_level_ads: true
+  });
+</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#222222"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#FFFFFF",
+      "border": "#FFFFFF"
+    }
+  },
+  "position": "bottom-right",
+  "content": {
+    "message": "Questo sito utilizza cookies per garantire una migliore esperienza di navigazione",
+    "dismiss": "Va bene!",
+    "link": "Che cosa sono i cookies?",
+    "href": "/privacy"
+  }
+})});
+</script>
+
+</head>
+
+
+<body class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
+  
+  <div id="overflow-container" class="overflow-container">
+    <a class="skip-content" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header" role="banner">
+      <div class='top-navigation'>
+        <div class='container'>
+
+  <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+    <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
+
+    <div class="menu">
+
+      <ul id="menu-secondary-items" class="menu-secondary-items">
+
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="https://garco.ga/categories/blog">BLOG</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="https://garco.ga/categories/web">WEB</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <ul class="social-media-icons">
+
+
+    
+    <li>
+      <a href="https://www.facebook.com/marco.garantini" data-animate-hover="pulse" class="facebook" target="_blank">
+        <i class="fa fa-facebook-square" title="facebook"></i>
+        <span class="screen-reader-text">facebook</span>
+      </a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a href="https://www.instagram.com/korka1313/" data-animate-hover="pulse" class="twitter" target="_blank">
+        <i class="fa fa-instagram" title="instagram"></i>
+        <span class="screen-reader-text">instagram</span>
+      </a>
+    </li>
+    
+
+    
+    <li>
+      <a href="mailto:marco.garantini@hotmail.com" data-animate-hover="pulse" class="email">
+        <i class="fa fa-envelope" title="email"></i>
+        <span class="screen-reader-text">email</span>
+      </a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+    <li>
+      <a href="https://github.com/Korka13" data-animate-hover="pulse" class="github" target="_blank">
+        <i class="fa fa-github" title="github"></i>
+        <span class="screen-reader-text">github</span>
+      </a>
+    </li>
+    
+
+
+    
+
+    
+
+
+  </ul></div>
+
+      </div>
+
+      <div class="container">
+        <div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    
+    <a href="https://garco.ga/"> GARCO </a>
+    </div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="https://garco.ga/about/">CHI SONO</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="https://garco.ga/contact/">CONTATTI</a>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+      </div>
+    </header>
+
+    <div id="main" class="main" role="main">
+
+      
+  <div id="loop-container" class="loop-container">
+    
+    <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+
+      <div class='featured-image lazy lazy-bg-image'  data-background="https://garco.ga/img/barbera.PNG">
+            </div>
+      
+        <div class="updated-date-article">
+          <span class="date">Aggiornato al: 2018-09-20</span>
+      </div>
+        <div class="entry-meta">
+          <span class="date">2018-09-20</span>	<span> / </span>
+
+          <span class="author">
+            
+            <a href="https://garco.ga/about/" title="Posts by MG" rel="author">MG</a>
+            
+          </span>
+
+
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="https://garco.ga/categories/web">WEB</a>
+          </span>
+          
+        </div>
+
+        <div class='entry-header'>
+          <h1 class='entry-title'> Scaricare il Tema Del Sito Su Hugo</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p><em><a href="https://garco.ga/post/come-costruire-questo-blog-a-costo-zero-indice/">Vai all&rsquo;Indice completo della guida su come creare un sito come questo</a></em></p>
+
+<p>Hugo è un&rsquo;ottima scelta per creare un blog in quanto offre una larga scelta di temi da cui partire, dal più semplice e basilare fino al più complesso.
+Cominciate a dare un&rsquo;occhiata alla <a href="https://themes.gohugo.io/" target="&#95;blank">pagina di esposizione dei temi</a> se non l&rsquo;avete già fatto.
+Il tema che ho scelto io è <a href="https://themes.gohugo.io/hugo-nederburg-theme/" target="&#95;blank">NEDERBURG</a>, al quale ho apportato qualche modifica. Nei prossimi articoli spiegherò nel dettaglio come ho implementato la maggior parte delle cose, quindi potete scegliere qualunque tema e applicare poi ad esso le modifiche che vi interessano.
+Se volete dare un&rsquo;occhiata al risultato del mio sito da parte Hugo ho creato un <a href="https://github.com/Korka13/BARBERA-theme" target="&#95;blank">repository su GitHub</a> che potete scaricare e installare sul vostro sito come un tema; io nella guida userò questo link come esempio, ma voi sostituitelo con il link del repository del tema che avete scelto.
+<em>Piccola parentesi sulle modifiche che ho fatto sul tema, se non vi interessa skippate direttamente all&rsquo;installazione!:</em></p>
+
+<ul>
+<li>La cosa più significativa, e che potrebbe far scegliere di non usare il tema è che ho rimosso i tags e lasciato solo le categorie. Per il mio blog trovavo i tags confusionari e inutili, quindi li ho rimossi, non vengono visualizzati più nell&rsquo;apposito spazio nelle pagine e tramite indicazione nel config.toml non vengono neanche create le pagine html sul sito.</li>
+<li>Ho tradotto (credo) tutto in italiano</li>
+<li>Ho modificato leggermente i colori, da una tonalità di marrone a una tonalità di grigio</li>
+<li>Ho rimosso la trasformazione del testo tutta in maiuscolo, per avere le parti scritte tutte in maiuscolo vanno inserite già maiuscole</li>
+<li>Ho rimosso il tasto Home, in quanto basta cliccare sul titolo del sito per tornare alla pagina iniziale</li>
+<li>Nella navbar invece di avere: <strong>// Categoria 1 Categoria uno</strong> abbiamo: <strong>/ Categoria 1 Categoria 2 /</strong></li>
+<li>Nel page title (quello che si vede scritto nella tab del browser) metadata ho fatto in modo che venga visualizzato solo il <strong>Titolo</strong> prima era <strong>Titolo - Slogan</strong></li>
+<li>Nella homepage nella visualizzazione dei post ho eliminato l&rsquo;autore e la data e lasciato solo la categoria. Data e autore si vedono all&rsquo;interno del post</li>
+<li>Ho aggiunto la data di ultimo aggiornamento all&rsquo;interno del post. Se nel front matter è presente una data di aggiornamento viene visualizzata la data di creazione</li>
+<li>Nel default post archetype ho aggiunto il weight: viene calcolato automaticamente assegnando un numero più alto di dieci in dieci in negativo all&rsquo;ultimo post. Quindi di default, l&rsquo;ultimo post sarà più in alto. Ho fatto questo per dare la possibilità di spostare un post più in basso anche se è più nuovo. Per esempio a me è utile per questa guida, voglio che venga visualizzata in sequenza e non al contrario. Se rimuovete il weight i post vengono ordinati automaticamente in base alla data.</li>
+<li>Ho aggiunto la pagina della privacy</li>
+<li>Ho aggiunto il popup di informativa dei cookies</li>
+<li>Ho aggiunto la possibilità di integrare Google Adsense, basta inserire il publisher id nel config file</li>
+<li>Ho cambiato la favicon e il nome! Perché <strong>BARBERA</strong>? non ci ho perso molto tempo, cercavo una favicon gratis da implementare, quando ho visto la bottiglia di vino mi è piaciuta quindi l&rsquo;ho scaricata. Poi non sapevo come chiamare il tema, allora ho cercato che cosa vuol dire <strong>NEDERBURG</strong>, ed è un vino! a questo punto non poteva essere altro che BARBERA.</li>
+</ul>
+
+<p><strong>Ok, proseguiamo con l&rsquo;installazione del tema:</strong></p>
+
+<p>Su ogni tema ci sono le istruzioni di come installarlo, ma ognuno dice un po&rsquo; i comandi che gli aggradano di più, quindi facciamola semplice:
+Dalla linea di comando dovete recarvi nella cartella <em>themes</em> e poi dare il comando a git di scaricare dal repository di Github. Quindi:</p>
+
+<ul>
+<li>Aprite il terminal dal + in basso e dovrebbe aprirsi già nella cartella del sito, poi:
+<code>cd themes</code>
+e poi:
+<code>git clone https://github.com/Korka13/BARBERA-theme.git</code></li>
+</ul>
+
+<p>Come anticipavo ho usato come esempio il link di BARBERA-theme, ma potete semplicemente sostituire il link con quello del repository che avete scelto.
+Scelto il tema cliccate su download e verrete ridirezionati sulla pagina di github che ospita il tema. Il link può essere copiato dal tasto clone or download (che poi è anche il link su cui già siete ma con aggiunto .git, non ancora capito a cosa serve perché anche senza .git sembra funzionare). In alternativa potete anche scaricare il file zip e decomprimerlo nella cartella themes, ma così secondo me è più comodo.</p>
+
+<p>Tutti i temi hanno al loro interno un examplesite folder, e un config.toml. Spostate i contenuti della cartella examplesite nelle corrispettive cartelle del vostro sito e sostituite il config.toml del vostro sito con quello scaricato del tema.</p>
+
+<p>Attenzione che nel config.toml, dove c&rsquo;è scritto <strong>theme</strong> accanto riporti l&rsquo;esatto nome della cartella del tema</p>
+
+<p>Adesso il tema è installato. Per vedere il sito live nel browser:
+Nel terminal fate attenzione ad essere nella cartella principale del sito. Se siete ancora nella cartella themes:
+<code>cd..</code>
+Per tornare indietro e poi:
+<code>hugo server</code>
+Questo abilita un local server di hugo che trasforma live i contenuti del sito in html vero e proprio e vi da la possibilità di vedere il sito aggiornarsi in locale mentre ci lavorate, prima di costruire il sito per caricarlo online.
+Questa live preview la potete vedere andando su:
+<a href="http://localhost:1313/" target="_blank">localhost:1313</a>
+La finestra del terminal non sarà utilizzabile mentre manda il sito in preview, ma cliccando di nuovo sul + ne potete aprire una seconda.
+Per stoppare il terminal dalla preview premete contemporaneamente Ctrl + C
+Per gli impazienti scrivo già qui come creare la cartella con i file html da caricare online per non farvi impazzire a cercare il comando negli articoli seguenti. Il comando è molto semplice:<br />
+<code>hugo</code>
+Questo costruirà una cartella <strong>public</strong> nella directory principale del sito. Questo è il contenuto finale che andrà caricato online.</p>
+
+            </article>
+          </div>
+          
+      <div class='entry-meta-bottom'>
+        
+
+  <div class="entry-categories"><p><span>Categoria</span>
+    
+    <a href="https://garco.ga/categories/web" title="View all posts in WEB">WEB</a>
+  </p>
+</div>
+
+</p></div>
+
+<div class="author-meta">
+
+  <div class="author">
+    <img alt='MG' src="https://www.gravatar.com/avatar/741904484743c69963d7c4bd2c70edbb?s=100&d=identicon" class='avatar avatar-72 photo' height='72' width='72'>
+
+    <span>
+      Autore:<a href="https://garco.ga/about/" title="Posts by MG" rel="author">MG</a>        </span>
+    </div>
+    <div class="bio">
+      
+      <p></p>
+      
+
+
+      
+      <a class="facebook" target="_blank"
+      href="https://www.facebook.com/marco.garantini">
+      <i class="fa fa-facebook"
+      title="facebook icon"></i>
+    </a>
+    
+
+    
+
+
+  
+
+
+
+<a class="email" target="_blank"
+href="mailto:marco.garantini@hotmail.com">
+<i class="fa fa-envelope"
+title="email icon"></i>
+</a>
+
+
+
+<a class="instagram" target="_blank"
+href="https://www.instagram.com/korka1313/">
+<i class="fa fa-instagram"
+title="instagram icon"></i>
+</a>
+
+
+
+
+
+<a class="github" target="_blank"
+href="https://github.com/Korka13">
+<i class="fa fa-github"
+title="github icon"></i>
+</a>
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+<section id="comments" class="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "http-garco-ga" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+
+
+
+
+</section>
+</div>
+
+ 
+
+
+
+    </div>
+
+    <footer id="site-footer" class="site-footer" role="contentinfo">
+	<h1>
+    
+    <a href=""> GARCO </a>
+    
+	</h1>
+
+			
+
+		<div id="menu-footer" class="menu-container menu-footer" role="navigation">
+		<div class="menu">
+
+      <ul id="menu-footer-items" class="menu-footer-items">
+        
+</ul>
+
+</div>	</div>
+
+<ul class="social-media-icons">
+
+        
+				<li>
+					<a class="facebook" target="_blank"
+					   href="https://www.facebook.com/marco.garantini" >
+						<i class="fa fa-facebook" title="facebook"></i>
+						<span class="screen-reader-text">facebook</span>
+					</a>
+				</li>
+        
+
+        
+
+
+        
+
+        
+        <li>
+        <a href="https://www.instagram.com/korka1313/"  class="twitter" target="_blank">
+            <i class="fa fa-instagram" title="instagram"></i>
+            <span class="screen-reader-text">instagram</span>
+        </a>
+        </li>
+        
+
+        
+        <li>
+        <a href="mailto:marco.garantini@hotmail.com"  class="email">
+            <i class="fa fa-envelope" title="email"></i>
+            <span class="screen-reader-text">email</span>
+        </a>
+        </li>
+        
+
+        
+
+        
+
+
+        
+        <li>
+        <a href="https://github.com/Korka13"  class="github" target="_blank">
+            <i class="fa fa-github" title="github"></i>
+            <span class="screen-reader-text">github</span>
+        </a>
+        </li>
+        
+
+
+        
+
+        
+
+				</ul>	<div class="design-credit">
+		
+		<p>&copy; 2018 Marco Garantini</p>
+		
+		<p>Leggi la <a href="https://garco.ga/privacy">Privacy Policy</a></p>
+		
+	</div>
+</footer>
+
+  </div>
+  <script src="https://garco.ga/js/jquery.min.js"></script>
+<script src="https://garco.ga/js/jquerymigrate.js"></script>
+<script src="https://garco.ga/js/production.min.js"></script>
+
+</body>
+</html>

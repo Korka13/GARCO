@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="it-it">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "https://garco.ga"
+        },
+        "articleSection": "post",
+        "name": "Come Installare Git",
+        "headline": "Come Installare Git",
+        "description": "Git è uno dei più famosi sistemi di controllo versione distribuito. In questa guida andremo a installare Git su Windows in maniera molto basica in quanto questo articolo è solo parte di una guida più grande il cui obiettivo è costruire un sito web, e non l&#39;utilizzo di Git come software.",
+        "inLanguage": "it",
+        "author": "Marco Garantini",
+        "creator": "Marco Garantini",
+        "publisher": "Marco Garantini",
+        "copyrightHolder": "Marco Garantini",
+        "copyrightYear": "2018",
+        "datePublished": "2018-09-15",
+        "dateModified": "2018-09-15",
+        "url": "https://garco.ga/post/come-installare-git/",
+        "wordCount": "293",
+        "image": "https://garco.gaimg/git.jpg",
+        "keywords": "Installare Git su Windows, Scarica Git, Blog"
+    }
+    </script>
+
+
+ <title>Come Installare Git</title>
+
+
+<meta name="description" content="Git è uno dei più famosi sistemi di controllo versione distribuito. In questa guida andremo a installare Git su Windows in maniera molto basica in quanto questo articolo è solo parte di una guida più grande il cui obiettivo è costruire un sito web, e non l&#39;utilizzo di Git come software." />
+
+
+<meta name="keywords" content="Installare Git su Windows, Scarica Git">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" id="ct-tracks-google-fonts-css" href="//fonts.googleapis.com/css?family=Raleway%3A400%2C700&amp;subset=latin%2Clatin-ext&amp;ver=4.7.2" type="text/css" media="all">
+<link rel="stylesheet" href="https://garco.ga/css/font-awesome.min.css" type='text/css' media='all'>
+
+<link href="https://garco.ga/css/style.css" rel="stylesheet" id="theme-stylesheet" type='text/css' media='all'>
+
+<link href="https://garco.ga/css/custom.css" rel="stylesheet" type='text/css' media='all'>
+<link rel="shortcut icon" href="https://garco.ga/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://garco.ga/img/favicon.ico" type="image/x-icon">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-124901497-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9308475212412596",
+    enable_page_level_ads: true
+  });
+</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#222222"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#FFFFFF",
+      "border": "#FFFFFF"
+    }
+  },
+  "position": "bottom-right",
+  "content": {
+    "message": "Questo sito utilizza cookies per garantire una migliore esperienza di navigazione",
+    "dismiss": "Va bene!",
+    "link": "Che cosa sono i cookies?",
+    "href": "/privacy"
+  }
+})});
+</script>
+
+</head>
+
+
+<body class="post-template-default single single-post single-format-standard ct-body singular singular-post not-front standard">
+  
+  <div id="overflow-container" class="overflow-container">
+    <a class="skip-content" href="#main">Skip to content</a>
+    <header id="site-header" class="site-header" role="banner">
+      <div class='top-navigation'>
+        <div class='container'>
+
+  <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+    <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
+
+    <div class="menu">
+
+      <ul id="menu-secondary-items" class="menu-secondary-items">
+
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="https://garco.ga/categories/blog">BLOG</a>
+        </li>
+        
+        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+          <a href="https://garco.ga/categories/web">WEB</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <ul class="social-media-icons">
+
+
+    
+    <li>
+      <a href="https://www.facebook.com/marco.garantini" data-animate-hover="pulse" class="facebook" target="_blank">
+        <i class="fa fa-facebook-square" title="facebook"></i>
+        <span class="screen-reader-text">facebook</span>
+      </a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li>
+      <a href="https://www.instagram.com/korka1313/" data-animate-hover="pulse" class="twitter" target="_blank">
+        <i class="fa fa-instagram" title="instagram"></i>
+        <span class="screen-reader-text">instagram</span>
+      </a>
+    </li>
+    
+
+    
+    <li>
+      <a href="mailto:marco.garantini@hotmail.com" data-animate-hover="pulse" class="email">
+        <i class="fa fa-envelope" title="email"></i>
+        <span class="screen-reader-text">email</span>
+      </a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+    <li>
+      <a href="https://github.com/Korka13" data-animate-hover="pulse" class="github" target="_blank">
+        <i class="fa fa-github" title="github"></i>
+        <span class="screen-reader-text">github</span>
+      </a>
+    </li>
+    
+
+
+    
+
+    
+
+
+  </ul></div>
+
+      </div>
+
+      <div class="container">
+        <div id="title-info" class="title-info">
+  <div id='site-title' class='site-title'>
+    
+    <a href="https://garco.ga/"> GARCO </a>
+    </div>
+  </div>
+  <button id="toggle-navigation" class="toggle-navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+
+  <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+  <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    
+
+    <div class="menu">
+      <ul id="menu-primary-items" class="menu-primary-items">
+        
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="https://garco.ga/about/">CHI SONO</a>
+          
+        </li>
+        
+        <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page '>
+          <a href="https://garco.ga/contact/">CONTATTI</a>
+          
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+      </div>
+    </header>
+
+    <div id="main" class="main" role="main">
+
+      
+  <div id="loop-container" class="loop-container">
+    
+    <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+
+      <div class='featured-image lazy lazy-bg-image'  data-background="https://garco.ga/img/git.jpg">
+            </div>
+      
+        <div class="updated-date-article">
+          <span class="date">Aggiornato al: 2018-09-15</span>
+      </div>
+        <div class="entry-meta">
+          <span class="date">2018-09-15</span>	<span> / </span>
+
+          <span class="author">
+            
+            <a href="https://garco.ga/about/" title="Posts by MG" rel="author">MG</a>
+            
+          </span>
+
+
+          
+          <span class="category">
+            <span> / </span>
+
+            <a href="https://garco.ga/categories/web">WEB</a>
+          </span>
+          
+        </div>
+
+        <div class='entry-header'>
+          <h1 class='entry-title'> Come Installare Git</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p><em><a href="https://garco.ga/post/come-costruire-questo-blog-a-costo-zero-indice/">Vai all&rsquo;Indice completo della guida su come creare un sito come questo</a></em></p>
+
+<p><strong>Git</strong> è uno dei più famosi <em>sistemi di controllo versione distribuito</em>. La sua funzione principale è quella di mantenere traccia delle modifiche apportate a un codice di programmazione nelle varie versioni. È utile ai programmatori per poter cooperare senza necessità di un server centrale. Per curiosità, è stato sviluppato nel 2005 da Linus Torvalds, il &ldquo;papà&rdquo; di Linux.</p>
+
+<p>Per lo scopo che abbiamo in questo gruppo di post; creare un sito web usando Hugo, Git ci servirà solo per avere una maggiore comodità nello scaricare temi e file da <strong>GitHub</strong>, quindi faremo un&rsquo;installazione molto basica.<br />
+Anche Git esiste per tutte le piattaforme, io per il momento spiegherò l&rsquo;installazione su Windows, <a href="https://git-scm.com/download/win" target="&#95;blank">questa è la pagina di download</a>.<br />
+Aperta la pagina dovrebbe partire in automatico il download della versione a 64bit, se non parte o se vi serve quella a 32bit cliccate su quella che vi serve ed eseguite il file.<br />
+Come accennavo Git è un programma abbastanza complesso, ma per l&rsquo;intento di questa guida servirà a poco, quindi tutte le impostazioni consigliate predefinite andranno bene. Potete cliccare avanti avanti finché non sono finite (ce ne sono un bel po&rsquo;). Annotate soltanto il path dove viene installato il pacchetto di Git, se servisse aggiungerlo alle variabili di ambiente.<br />
+Una volta terminata l&rsquo;installazione aprite una finestra del prompt dei comandi ed eseguite:<br />
+<code>git --version</code><br />
+Se viene riportata la versione installata di Git è tutto a posto, mentre se riporta un errore dovrete aggiungere il percorso di cui avete preso nota durante l&rsquo;installazione e aggiungerlo alle variabili di ambiente esattamente come è stato fatto quando abbiamo installato <a href="https://garco.ga/post/come-installare-hugo/">Hugo</a>.</p>
+
+<p><a href="https://garco.ga/post/struttura-della-directory-del-sito-su-hugo/">Per il momento Git lo lasciamo da parte, e andiamo a creare la struttura del sito.</a></p>
+
+<p><strong>Grazie!</strong></p>
+
+            </article>
+          </div>
+          
+      <div class='entry-meta-bottom'>
+        
+
+  <div class="entry-categories"><p><span>Categoria</span>
+    
+    <a href="https://garco.ga/categories/web" title="View all posts in WEB">WEB</a>
+  </p>
+</div>
+
+</p></div>
+
+<div class="author-meta">
+
+  <div class="author">
+    <img alt='MG' src="https://www.gravatar.com/avatar/741904484743c69963d7c4bd2c70edbb?s=100&d=identicon" class='avatar avatar-72 photo' height='72' width='72'>
+
+    <span>
+      Autore:<a href="https://garco.ga/about/" title="Posts by MG" rel="author">MG</a>        </span>
+    </div>
+    <div class="bio">
+      
+      <p></p>
+      
+
+
+      
+      <a class="facebook" target="_blank"
+      href="https://www.facebook.com/marco.garantini">
+      <i class="fa fa-facebook"
+      title="facebook icon"></i>
+    </a>
+    
+
+    
+
+
+  
+
+
+
+<a class="email" target="_blank"
+href="mailto:marco.garantini@hotmail.com">
+<i class="fa fa-envelope"
+title="email icon"></i>
+</a>
+
+
+
+<a class="instagram" target="_blank"
+href="https://www.instagram.com/korka1313/">
+<i class="fa fa-instagram"
+title="instagram icon"></i>
+</a>
+
+
+
+
+
+<a class="github" target="_blank"
+href="https://github.com/Korka13">
+<i class="fa fa-github"
+title="github icon"></i>
+</a>
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+<section id="comments" class="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "http-garco-ga" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+
+
+
+
+</section>
+</div>
+
+ 
+
+
+
+    </div>
+
+    <footer id="site-footer" class="site-footer" role="contentinfo">
+	<h1>
+    
+    <a href=""> GARCO </a>
+    
+	</h1>
+
+			
+
+		<div id="menu-footer" class="menu-container menu-footer" role="navigation">
+		<div class="menu">
+
+      <ul id="menu-footer-items" class="menu-footer-items">
+        
+</ul>
+
+</div>	</div>
+
+<ul class="social-media-icons">
+
+        
+				<li>
+					<a class="facebook" target="_blank"
+					   href="https://www.facebook.com/marco.garantini" >
+						<i class="fa fa-facebook" title="facebook"></i>
+						<span class="screen-reader-text">facebook</span>
+					</a>
+				</li>
+        
+
+        
+
+
+        
+
+        
+        <li>
+        <a href="https://www.instagram.com/korka1313/"  class="twitter" target="_blank">
+            <i class="fa fa-instagram" title="instagram"></i>
+            <span class="screen-reader-text">instagram</span>
+        </a>
+        </li>
+        
+
+        
+        <li>
+        <a href="mailto:marco.garantini@hotmail.com"  class="email">
+            <i class="fa fa-envelope" title="email"></i>
+            <span class="screen-reader-text">email</span>
+        </a>
+        </li>
+        
+
+        
+
+        
+
+
+        
+        <li>
+        <a href="https://github.com/Korka13"  class="github" target="_blank">
+            <i class="fa fa-github" title="github"></i>
+            <span class="screen-reader-text">github</span>
+        </a>
+        </li>
+        
+
+
+        
+
+        
+
+				</ul>	<div class="design-credit">
+		
+		<p>&copy; 2018 Marco Garantini</p>
+		
+		<p>Leggi la <a href="https://garco.ga/privacy">Privacy Policy</a></p>
+		
+	</div>
+</footer>
+
+  </div>
+  <script src="https://garco.ga/js/jquery.min.js"></script>
+<script src="https://garco.ga/js/jquerymigrate.js"></script>
+<script src="https://garco.ga/js/production.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WEB on GARCO</title>
+    <link>https://garco.ga/categories/web/</link>
+    <description>Recent content in WEB on GARCO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Sun, 09 Sep 2018 04:27:17 +0300</lastBuildDate>
+    
+	<atom:link href="https://garco.ga/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Come Costruire Questo Blog a Costo Zero: Indice</title>
+      <link>https://garco.ga/post/come-costruire-questo-blog-a-costo-zero-indice/</link>
+      <pubDate>Sun, 09 Sep 2018 04:27:17 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/come-costruire-questo-blog-a-costo-zero-indice/</guid>
+      <description>Dopo la storiella passo ai fatti, di seguito i link ai vari articoli: 
+Non ho ancora terminato tutti gli articoli  Come Installare HUGO static website generator su Windows su Windows Come Installare Atom Text Editor e il Terminal su Windows Come Installare Git su Windows Struttura della Directory del Sito su Hugo Scaricare Il Tema del Sito per Hugo  a seguire:  [Impostazioni di config.toml]() [Front Matter e Archetyypes]() [Pagina Contatti, About, Etc.</description>
+    </item>
+    
+    <item>
+      <title>Come Installare HUGO</title>
+      <link>https://garco.ga/post/come-installare-hugo/</link>
+      <pubDate>Sun, 09 Sep 2018 04:48:55 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/come-installare-hugo/</guid>
+      <description>Vai all&amp;rsquo;Indice completo della guida su come creare un sito come questo
+HUGO: innanzitutto, che cos&amp;rsquo;è? È un programma, è disponibile praticamente per qualsiasi piattaforma, io per il momento spiegherò passo passo come installarlo su Windows, se avete Mac OS ci sono molte guide in inglese online (qui un video), se avete Linux non credo vi serva il mio aiuto.
+Il programma aiuta a creare un sito web statico, ovvero che non ha parti dinamiche come PHP, ma si basa solo su HTML, JavaScript e CSS.</description>
+    </item>
+    
+    <item>
+      <title>Come Installare Atom Text Editor</title>
+      <link>https://garco.ga/post/come-installare-atom-text-editor/</link>
+      <pubDate>Wed, 12 Sep 2018 06:24:39 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/come-installare-atom-text-editor/</guid>
+      <description>Vai all&amp;rsquo;Indice completo della guida su come creare un sito come questo
+Atom text editor è un programma open source utilizzato da molti sviluppatori e web developer, ha una tree view laterale dove si può vedere la cartella in cui è contenuto il progetto, una visualizzazione di text editor a colori come tutti gli altri text editor famosi, e una marea di altre funzionalità che non sto ad elencare perché al momento non ci interessa, e perché al momento non ne conosco molte!</description>
+    </item>
+    
+    <item>
+      <title>Come Installare Git</title>
+      <link>https://garco.ga/post/come-installare-git/</link>
+      <pubDate>Sat, 15 Sep 2018 22:50:02 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/come-installare-git/</guid>
+      <description>Vai all&amp;rsquo;Indice completo della guida su come creare un sito come questo
+Git è uno dei più famosi sistemi di controllo versione distribuito. La sua funzione principale è quella di mantenere traccia delle modifiche apportate a un codice di programmazione nelle varie versioni. È utile ai programmatori per poter cooperare senza necessità di un server centrale. Per curiosità, è stato sviluppato nel 2005 da Linus Torvalds, il &amp;ldquo;papà&amp;rdquo; di Linux.</description>
+    </item>
+    
+    <item>
+      <title>Struttura della Directory del Sito su Hugo</title>
+      <link>https://garco.ga/post/struttura-della-directory-del-sito-su-hugo/</link>
+      <pubDate>Sun, 16 Sep 2018 21:59:47 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/struttura-della-directory-del-sito-su-hugo/</guid>
+      <description>Vai all&amp;rsquo;Indice completo della guida su come creare un sito come questo
+Allora, partiamo dal decidere dove verrà creato il sito. In diverse guide che ho trovato, quando si installa Hugo, danno indicazione di creare due cartelle, una &amp;ldquo;bin&amp;rdquo;, che abbiamo creato anche noi, e una &amp;ldquo;Sites&amp;rdquo;, che invece io non ho menzionato nella guida. Non l&amp;rsquo;ho menzionata perché non l&amp;rsquo;ho trovata necessaria, potete tenere i siti dove vi è più comodo.</description>
+    </item>
+    
+    <item>
+      <title>Scaricare il Tema Del Sito Su Hugo</title>
+      <link>https://garco.ga/post/scaricare-il-tema-del-sito-su-hugo/</link>
+      <pubDate>Thu, 20 Sep 2018 21:14:24 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/scaricare-il-tema-del-sito-su-hugo/</guid>
+      <description>Vai all&amp;rsquo;Indice completo della guida su come creare un sito come questo
+Hugo è un&amp;rsquo;ottima scelta per creare un blog in quanto offre una larga scelta di temi da cui partire, dal più semplice e basilare fino al più complesso. Cominciate a dare un&amp;rsquo;occhiata alla pagina di esposizione dei temi se non l&amp;rsquo;avete già fatto. Il tema che ho scelto io è NEDERBURG, al quale ho apportato qualche modifica. Nei prossimi articoli spiegherò nel dettaglio come ho implementato la maggior parte delle cose, quindi potete scegliere qualunque tema e applicare poi ad esso le modifiche che vi interessano.</description>
+    </item>
+    
+    <item>
+      <title>Come È Nato GARCO</title>
+      <link>https://garco.ga/post/come-e-nato-garco/</link>
+      <pubDate>Fri, 07 Sep 2018 19:40:02 +0300</pubDate>
+      
+      <guid>https://garco.ga/post/come-e-nato-garco/</guid>
+      <description>Per raccontare bene come sono arrivato a mettere online GARCO, dobbiamo fare un bel passo indietro e dire come è stato messo online IWANAAT.
+IWANAAT è il primo sito che ho fatto, un’idea che avevo da tempo, frutto della necessità che ebbi una volta di reperire l&amp;rsquo;immagine di installazione di Windows 7 OEM. Non essendo più possible scaricare le immagini di installazione di Windows 7 OEM dal sito web ufficiale Microsoft, avevo preventivamente scaricato tutte le immagini da HeiDoc.</description>
+    </item>
+    
+  </channel>
+</rss>

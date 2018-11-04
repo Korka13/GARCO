@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on GARCO</title>
+    <link>https://garco.ga/categories/</link>
+    <description>Recent content in Categories on GARCO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Thu, 30 Aug 2018 21:17:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://garco.ga/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BLOG</title>
+      <link>https://garco.ga/categories/blog/</link>
+      <pubDate>Thu, 30 Aug 2018 21:17:00 +0300</pubDate>
+      
+      <guid>https://garco.ga/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WEB</title>
+      <link>https://garco.ga/categories/web/</link>
+      <pubDate>Sun, 09 Sep 2018 04:27:17 +0300</pubDate>
+      
+      <guid>https://garco.ga/categories/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
